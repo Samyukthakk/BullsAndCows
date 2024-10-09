@@ -55,6 +55,7 @@ export class AppComponent {
     if(bulls === DIGITS) {
       this.message.set(`you won!! num of tries = ${this.guessHistory().length} `)
     }
+    this.guess.set('');
   }
 
   bullsCows(guess: number[], answer: number[]) {
